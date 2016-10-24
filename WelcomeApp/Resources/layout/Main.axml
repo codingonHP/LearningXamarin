@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/WecomeAppLinearLayout"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:weightSum="100">
+    <TextView
+        android:id="@+id/tvWelcomeMessage"
+        android:text="@string/Hello"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_weight="50" />
+    <ImageView
+        android:id="@+id/imgWelcomeApp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/people"
+        android:layout_weight="50"
+        android:layout_gravity="center_vertical"
+        />
+</LinearLayout>

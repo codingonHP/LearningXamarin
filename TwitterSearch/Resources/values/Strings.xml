@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">Twitter Search</string>
+  <string name="SearchUrl">http://search.twitter.com/search?q=</string>
+  <string name="TagPrompt">Tag your query</string>
+  <string name="QueryPrompt">Enter twitter search query here</string>
+  <string name="TagggedSearches">Tagged Searches</string>
+  <string name="Edit">Edit</string>
+  <string name="ClearTags">Clear Tags</string>
+  <string name="Save">Save</string>
+  <string name="Erase">Erase</string>
+  <string name="Cancel">Cancel</string>
+  <string name="OK">OK</string>
+  <string name="MissingTitle">Missing Text</string>
+  <string name="MissingMessage">Please enter a search query and tag it</string>
+  <string name="ConfirmTitle">Are you sure?</string>
+  <string name="ConfirmMessage">This will delete all the saved searches.</string>
+</resources>

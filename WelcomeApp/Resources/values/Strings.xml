@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Welcome Andoid App using Xamarin</string>
+    <string name="ApplicationName">WelcomeApp</string>
+</resources>

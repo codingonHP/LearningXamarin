@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tipCalculatorLinerLayout"
+    android:weightSum="100"
+    android:textAlignment="center"
+    android:background="@android:color/background_light"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:padding="15dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/TipCalculatorLinearLayout"
+        android:layout_weight="20"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:weightSum="100">
+        <TextView
+            android:text="Bill Total"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewBillTotal"
+            android:gravity="center_vertical"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textColor="@android:color/black"
+            android:layout_weight="40"
+            android:layout_gravity="center_vertical" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTotalBillAmount"
+            android:layout_weight="60"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textAlignment="gravity"
+            android:textSize="12dp"
+            android:textColor="@android:color/black"
+            android:singleLine="true" />
+    </LinearLayout>
+    <TableLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/CalculatorBodyTableLayout"
+        android:padding="10dp"
+        android:layout_weight="90"
+        android:layout_gravity="center_vertical"
+        android:gravity="left"
+        android:weightSum="100">
+        <TableRow
+            android:id="@+id/tableRow1_header"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:showDividers="middle">
+            <TextView
+                android:id="@+id/lblblank"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:layout_weight="25" />
+            <TextView
+                android:text="10%"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold"
+                android:id="@+id/lbl10p"
+                android:gravity="center"
+                android:layout_weight="25" />
+            <TextView
+                android:text="15%"
+                android:id="@+id/lbl15p"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="25" />
+            <TextView
+                android:text="20%"
+                android:id="@+id/lbl20p"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="25" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2_tip"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/lblTip"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:text="Tip"
+                android:layout_weight="25"
+                android:textStyle="bold" />
+            <TextView
+                android:text="10%"
+                android:id="@+id/lblTip10p"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight="25" />
+            <TextView
+                android:text="15%"
+                android:id="@+id/lblTip15p"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight="25" />
+            <TextView
+                android:text="20%"
+                android:id="@+id/lblTip20p"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight="25" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3_total"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/lblTotal"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:text="Total"
+                android:layout_weight="25"
+                android:textStyle="bold" />
+            <TextView
+                android:text="10%"
+                android:id="@+id/lblTotal10p"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight="25" />
+            <TextView
+                android:text="15%"
+                android:id="@+id/lblTotal15p"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight="25" />
+            <TextView
+                android:text="20%"
+                android:id="@+id/lblTotal20p"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight="25" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4_Custom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/lblTotal"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:text="Custom"
+                android:layout_weight="25"
+                android:textStyle="bold" />
+            <SeekBar
+                android:id="@+id/sbCustomSet"
+                android:layout_weight="50" />
+            <TextView
+                android:text="20%"
+                android:id="@+id/lblCustomTipPercentage"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight="25" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5_total"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/lblCustomTip"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:text="Tip"
+                android:layout_weight="25"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Tip"
+                android:id="@+id/lblCustomTipValue"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight="25" />
+            <TextView
+                android:text="Total"
+                android:id="@+id/lblCustomTipTotal"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight="25"
+                android:textStyle="bold" />
+            <TextView
+                android:text="20%"
+                android:id="@+id/lblCustomTotalAmount"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight="25" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
